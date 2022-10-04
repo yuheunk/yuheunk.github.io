@@ -28,4 +28,4 @@ My research interest is mainly in <b>Natural Language Processing(NLP)</b>, speci
 
 Another interest I have is <b>Information Retrieval</b> especially cross-modal retrieval. In my Masters, my colleagues and I worked on a <b>cross-modal retrieval model</b> that preserves the temporal order within videos.
 
-Check out my [Google Scholar](https://scholar.google.com/citations?user=JYrO_FYAAAAJ&hl=ko&oi=ao) or [CV](http://localhost:4000/assets/pdf/CV_2206.pdf) for more information. <br>
+Check out my [Google Scholar](https://scholar.google.com/citations?user=JYrO_FYAAAAJ&hl=ko&oi=ao) or [CV](https://yuheunk.github.io/assets/pdf/CV_yk_2209.pdf) for more information. <br>
