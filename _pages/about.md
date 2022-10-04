@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Doctoral student @ <a href="https://ischool.syr.edu">Syracuse</a>
+subtitle: Doctoral student @ <a href="https://ischool.syr.edu">Information Science at Syracuse University</a>
 
 profile:
   align: right
