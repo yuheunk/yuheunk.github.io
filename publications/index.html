@@ -2,16 +2,17 @@
 <html lang="en">
 
   <!-- Head -->
-  <head><meta http-equiv="refresh" content="3; url=https://yuheunk.github.io/" />    <!-- Metadata, OpenGraph and Schema.org -->
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
     
 
     <!-- Standard metadata -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Yuheun  Kim | Page not found</title>
+    <title>Yuheun  Kim | publications</title>
     <meta name="author" content="Yuheun  Kim" />
-    <meta name="description" content="Looks like there has been a mistake. Nothing exists here." />
+    <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+" />
     <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
 
 
@@ -32,7 +33,7 @@
     <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
     
     <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="canonical" href="https://yuheunk.github.io/404.html">
+    <link rel="canonical" href="https://yuheunk.github.io/publications/">
     
     <!-- Dark Mode -->
     
@@ -75,8 +76,8 @@
               <li class="nav-item ">
                 <a class="nav-link" href="/assets/pdf/CV_yk_2209.pdf">CV</a>
               </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/publications/">publications</a>
+              <li class="nav-item active">
+                <a class="nav-link" href="/publications/">publications<span class="sr-only">(current)</span></a>
               </li>
 
               <!-- Toogle theme mode -->
@@ -98,12 +99,65 @@
         <div class="post">
 
           <header class="post-header">
-            <h1 class="post-title">Page not found</h1>
-            <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+            <h1 class="post-title">publications</h1>
+            <p class="post-description"></p>
           </header>
 
           <article>
-            <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://yuheunk.github.io/">here</a>.</p>
+            <!-- _pages/publications.md -->
+<div class="publications">
+  <h2 class="year">2021</h2>
+  <ol class="bibliography"><li>
+<!-- _layouts/bib.html -->
+      <div class="row">
+        <div class="col-sm-3"><img class="img-fluid rounded z-depth-1" src="/assets/pubimg/2021_hong_bioprep.png"></div>
+
+        <!-- Entry bib key -->
+        <div id="2021bioprep" class="col-sm-8">
+        
+          <!-- Title -->
+          <div class="title">BioPREP: Deep learning-based predicate classification with SemMedDB</div>
+          <!-- Author -->
+          <div class="author">Hong, Gibong*, Kim, Yuheun*, Choi, YeonJung*, and Song, Min
+          </div>
+
+          <!-- Journal/Book title and date -->
+          <div class="periodical">
+            <em>Journal of Biomedical Informatics</em> 2021
+          </div>
+        
+          <!-- Links/Buttons -->
+          <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="https://doi.org/10.1016/j.jbi.2021.103888" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">HTML</a>
+          </div>
+
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>When it comes to inferring relations between entities in biomedical texts, Relation Extraction (RE) has become key to biomedical information extraction. Although previous studies focused on using rule-based and machine learning-based approaches, these methods lacked efficiency in terms of the demanding amount of feature processing while resulting in relatively low accuracy. Some existing biomedical relation extraction tools are based on neural networks. Nonetheless, they rarely analyze possible causes of the difference in accuracy among predicates. Also, there have not been enough biomedical datasets that were structured for predicate classification. With these regards, we set our research goals as follows: constructing a large-scale training dataset, namely Biomedical Predicate Relation-extraction with Entity-filtering by PKDE4J (BioPREP), based on SemMedDB then using PKDE4J as an entity-filtering tool, evaluating the performances of each neural network-based algorithms on the structured dataset. We then analyzed our model’s performance in-depth by grouping predicates into semantic clusters. Based on comprehensive experimental outcomes, the experiments showed that the BioBERT-based model outperformed other models for predicate classification. The suggested model achieved an f1-score of 0.846 when BioBERT was loaded as the pre-trained model and 0.840 when SciBERT weights were loaded. Moreover, the semantic cluster analysis showed that sentences containing key phrases were classified better, such as comparison verb + ‘than’.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">2021bioprep</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{BioPREP: Deep learning-based predicate classification with SemMedDB}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Hong, Gibong* and Kim, Yuheun* and Choi, YeonJung* and Song, Min}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Journal of Biomedical Informatics}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{122}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{103888}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2021}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Elsevier}</span><span class="p">,</span>
+  <span class="na">abbr</span> <span class="p">=</span> <span class="s">{2021_hong_bioprep}</span><span class="p">,</span>
+  <span class="na">bibtex_show</span> <span class="p">=</span> <span class="s">{true}</span><span class="p">,</span>
+  <span class="na">html</span> <span class="p">=</span> <span class="s">{https://doi.org/10.1016/j.jbi.2021.103888}</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
+        </div>
+      </div>
+</li></ol>
+
+
+</div>
 
           </article>
 
