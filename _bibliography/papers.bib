@@ -1,5 +1,20 @@
 ---
 ---
+@INPROCEEDINGS{2022sq2sv,
+  abstract={Current video retrieval models are one-to-one matching models, which limits them from learning from the sequential context of the videos. While most public datasets for this task are text-video pairs that are contextually independent, datasets such as YouCook2, Video Storytelling, and COIN consist of chronological text-video pair segments. This paper introduces a retrieval task Sequential Queries to Sequential Videos retrieval (SQ2SV) that retrieves multiple sets of sequential videos from sequential queries to utilize such contextual interdependence. To the best of our knowledge, this paper is the first a ttempt to introduce multiple sets of sequential videos retrieval. We not only introduce a new task but also build a task-specific model and its evaluation metric. Our model, UniSeq (UniVL-based sequential videos retrieval), is a sequential as well as a cross representation model. Our new metric ‘Video R@k’ evaluates the performance of a retrieval model in a unit of video, not in a unit of the video segment. Our best model outperforms the UniVL baseline in the original R@1 of YouCook2 by 0.40% and Video Storytelling by 1.09%. Furthermore, comparing the Video R@1 score, our model outperforms the baseline by 0.27% for YouCook2 and 0.94% for Video Storytelling.},
+  title={SQ2SV: Sequential Queries to Sequential Videos retrieval},
+  author={Paek, Injin and Choi, Nayoung and Ha, Seongjin and Kim, Yuheun and Song, Min},
+  booktitle={2022 IEEE International Conference on Big Data (Big Data)},
+  volume={},
+  pages={3631-3634},
+  year={2022},
+  doi={10.1109/BigData55660.2022.10020744},
+  selected={true},
+  
+  abbr={2022_paek_sq2sv},
+  bibtex_show={true},
+  html={https://doi.org/10.1109/BigData55660.2022.10020744}
+}
 
 @article{2021bioprep,
   abstract={When it comes to inferring relations between entities in biomedical texts, Relation Extraction (RE) has become key to biomedical information extraction. Although previous studies focused on using rule-based and machine learning-based approaches, these methods lacked efficiency in terms of the demanding amount of feature processing while resulting in relatively low accuracy. Some existing biomedical relation extraction tools are based on neural networks. Nonetheless, they rarely analyze possible causes of the difference in accuracy among predicates. Also, there have not been enough biomedical datasets that were structured for predicate classification. With these regards, we set our research goals as follows: constructing a large-scale training dataset, namely Biomedical Predicate Relation-extraction with Entity-filtering by PKDE4J (BioPREP), based on SemMedDB then using PKDE4J as an entity-filtering tool, evaluating the performances of each neural network-based algorithms on the structured dataset. We then analyzed our model’s performance in-depth by grouping predicates into semantic clusters. Based on comprehensive experimental outcomes, the experiments showed that the BioBERT-based model outperformed other models for predicate classification. The suggested model achieved an f1-score of 0.846 when BioBERT was loaded as the pre-trained model and 0.840 when SciBERT weights were loaded. Moreover, the semantic cluster analysis showed that sentences containing key phrases were classified better, such as comparison verb + ‘than’.},
@@ -10,23 +25,10 @@
   pages={103888},
   year={2021},
   publisher={Elsevier},
+  selected={true},
 
   abbr={2021_hong_bioprep},
   bibtex_show = {true},
   html={https://doi.org/10.1016/j.jbi.2021.103888}
 }
 
-@INPROCEEDINGS{2022sq2sv,
-  abstract={Current video retrieval models are one-to-one matching models, which limits them from learning from the sequential context of the videos. While most public datasets for this task are text-video pairs that are contextually independent, datasets such as YouCook2, Video Storytelling, and COIN consist of chronological text-video pair segments. This paper introduces a retrieval task Sequential Queries to Sequential Videos retrieval (SQ2SV) that retrieves multiple sets of sequential videos from sequential queries to utilize such contextual interdependence. To the best of our knowledge, this paper is the first a ttempt to introduce multiple sets of sequential videos retrieval. We not only introduce a new task but also build a task-specific model and its evaluation metric. Our model, UniSeq (UniVL-based sequential videos retrieval), is a sequential as well as a cross representation model. Our new metric ‘Video R@k’ evaluates the performance of a retrieval model in a unit of video, not in a unit of the video segment. Our best model outperforms the UniVL baseline in the original R@1 of YouCook2 by 0.40% and Video Storytelling by 1.09%. Furthermore, comparing the Video R@1 score, our model outperforms the baseline by 0.27% for YouCook2 and 0.94% for Video Storytelling.},
-  title={SQ2SV: Sequential Queries to Sequential Videos retrieval},
-  author={Paek, Injin and Choi, Nayoung and Ha, Seongjin and Kim, Yuheun and Song, Min},
-  booktitle={2022 IEEE International Conference on Big Data (Big Data)},
-  volume={},
-  pages={3631-3634},
-  year={2022},
-  doi={10.1109/BigData55660.2022.10020744},
-  
-  abbr={2022_paek_sq2sv},
-  bibtex_show={true},
-  html={https://doi.org/10.1109/BigData55660.2022.10020744}
-}

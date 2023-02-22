@@ -16,16 +16,14 @@ profile:
     </p>
 
 news: false  # includes a list of news items
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-👋 Hello, my name is pronounced as `/Yeo-un/`. I also go by `Rachel` so feel free to call me either.
+👋 Hello, my name is pronounced as `/Yeo-un/`. I also go by `Rachel` so feel free to call me either. 
 
-I am a first year <b>Ph.D. student at Syracuse University</b>. Before joining Syracuse University, I got a Masters from [Yonsei University](https://digitalanalytics.yonsei.ac.kr/digital_analytics/index.do).
+My research interest is mainly in <b>Natural Language Processing(NLP)</b>, specifically <b>information extraction</b> using NLP tools and deep learning.
 
-My research interest is mainly in <b>Natural Language Processing(NLP)</b>, specifically <b>extracting information</b> using NLP tools and deep learning. Text holds a lot of information that have yet been discovered and I believe making use of such is an important task. 
-
-Another interest I have is <b>Information Retrieval</b> especially cross-modal retrieval. In my Masters, my colleagues and I worked on a <b>cross-modal retrieval model</b> that preserves the temporal order within videos.
+I got a M.S. in [Digital Analytics](https://digitalanalytics.yonsei.ac.kr/digital_analytics/index.do) from Yonsei University and worked as a research assistant in [Deep Text Lab](https://deeptext.yonsei.ac.kr) on various NLP tasks such as <i>Biomedical Information Extraction, Social Text Mining</i> and <i>Neural Search</i>.
 
 Check out my [Google Scholar](https://scholar.google.com/citations?user=JYrO_FYAAAAJ&hl=ko&oi=ao) or [CV](https://yuheunk.github.io/assets/pdf/CV_yk_2302.pdf) for more information. <br>
