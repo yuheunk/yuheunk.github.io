@@ -26,4 +26,4 @@ My research interest is mainly in <b>Natural Language Processing(NLP)</b>, speci
 
 I got a M.S. in [Digital Analytics](https://digitalanalytics.yonsei.ac.kr/digital_analytics/index.do) from Yonsei University and worked as a research assistant in [Deep Text Lab](https://deeptext.yonsei.ac.kr) on various NLP tasks such as <i>Biomedical Information Extraction, Social Text Mining</i> and <i>Neural Search</i>.
 
-Check out my [Google Scholar](https://scholar.google.com/citations?user=JYrO_FYAAAAJ&hl=ko&oi=ao) or [CV](https://yuheunk.github.io/assets/pdf/CV_yk_2302.pdf) for more information. <br>
+Check out my [Google Scholar](https://scholar.google.com/citations?user=JYrO_FYAAAAJ&hl=ko&oi=ao) or [CV](https://yuheunk.github.io/assets/pdf/CV_yk_2401.pdf) for more information. <br>
