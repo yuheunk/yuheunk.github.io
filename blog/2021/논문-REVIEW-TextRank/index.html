@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<!-- _layouts/distill.html -->
+<html>
+  <head>    <!-- Metadata, OpenGraph and Schema.org -->
+    
+
+    <!-- Standard metadata -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yuheun  Kim | REVIEW - TextRank: Bringing Order into Texts</title>
+    <meta name="author" content="Yuheun  Kim" />
+    <meta name="description" content="TextRank 논문 리뷰" />
+    <meta name="keywords" content="jekyll, jekyll-theme, academic-website, portfolio-website" />
+
+
+    <!-- Bootstrap & MDB -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-DF7Zhf293AJxJNTmh5zhoYYIMs2oXitRfBjY+9L//AY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/css/mdb.min.css" integrity="sha256-jpjYvU3G3N6nrrBwXJoVEYI/0zw8htfFnhT9ljN3JJw=" crossorigin="anonymous" />
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha256-i1+4qU2G2860dGGIOJscdC30s9beBXjFfzjWLjBRsBg=" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+    <!-- Code Syntax Highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/github.css" media="none" id="highlight_theme_light" />
+
+    <!-- Styles -->
+    
+    <link rel="shortcut icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚛️</text></svg>">
+    
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="https://yuheunk.github.io/blog/2021/%EB%85%BC%EB%AC%B8-REVIEW-TextRank/">
+    
+    <!-- Dark Mode -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jwarby/jekyll-pygments-themes@master/native.css" media="none" id="highlight_theme_dark" />
+
+    <script src="/assets/js/theme.js"></script>
+    <script src="/assets/js/dark_mode.js"></script>
+    
+
+
+    <!-- MathJax -->
+  <script type="text/javascript">
+    window.MathJax = {
+      tex: {
+        tags: 'ams'
+      }
+    };
+  </script>
+  <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+  <script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+    <!-- Distill js -->
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    
+  </head>
+
+  <d-front-matter>
+    <script async type="text/json">{
+      "title": "REVIEW - TextRank: Bringing Order into Texts",
+      "description": "TextRank 논문 리뷰",
+      "published": "March 25, 2021",
+      "authors": [
+        {
+          "author": "",
+          "authorURL": "",
+          "affiliations": [
+            {
+              "name": "",
+              "url": ""
+            }
+          ]
+        }
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+  </d-front-matter>
+
+  <body class="fixed-top-nav">
+
+    <!-- Header -->
+    <header>
+
+      <!-- Nav Bar -->
+      <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+        <div class="container">
+          <a class="navbar-brand title font-weight-lighter" href="https://yuheunk.github.io/"><span class="font-weight-bold">Yuheun</span>   Kim</a>
+          <!-- Navbar Toggle -->
+          <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar top-bar"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+
+          <div class="collapse navbar-collapse text-right" id="navbarNav">
+            <ul class="navbar-nav ml-auto flex-nowrap">
+
+              <!-- About -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/">about</a>
+              </li>
+              
+              <!-- Blog -->
+              <li class="nav-item active">
+                <a class="nav-link" href="/blog/">blog</a>
+              </li>
+
+              <!-- Other pages -->
+              <li class="nav-item ">
+                <a class="nav-link" href="/assets/pdf/CV_yk_2401.pdf">CV</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="/publications/">publications</a>
+              </li>
+
+              <!-- Toogle theme mode -->
+              <div class="toggle-container">
+                <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="post distill">
+
+      <d-title>
+        <h1>REVIEW - TextRank: Bringing Order into Texts</h1>
+        <p>TextRank 논문 리뷰</p>
+      </d-title>
+
+      <d-byline></d-byline>
+
+      <d-article>
+        <d-contents>
+          <nav class="l-text figcaption">
+          <h3>Contents</h3>
+            <div><a href="#0-intro">0. Intro</a></div>
+            <div><a href="#1-markov-chain">1. Markov Chain</a></div>
+            <div><a href="#2-pagerank">2. PageRank</a></div>
+            <div><a href="#3-textrank">3. TextRank</a></div>
+            <ul>
+              <li><a href="#keyword-extraction">Keyword Extraction</a></li>
+              <li><a href="#sentence-extraction">Sentence Extraction</a></li>
+              
+            </ul>
+          </nav>
+        </d-contents>
+
+        <p>Original Post: <a href="http://tinyurl.com/2nffsm4k" target="_blank" rel="noopener noreferrer">DeepTextLab Blog</a></p>
+
+<h2 id="0-intro">0. Intro</h2>
+
+<p><a href="https://web.eecs.umich.edu/~mihalcea/papers/mihalcea.emnlp04.pdf" target="_blank" rel="noopener noreferrer">TextRank</a>는 텍스트 처리에 있어 그래프 기반의 랭킹 모델이며, 본 논문에서는 이를 이용하여 keyword extraction(키워드 추출)과 sentence extraction(핵심 문장 추출) 두가지 기능을 제공한다.</p>
+
+<p>TextRank를 이해하려면 학습 기반이 되는 PageRank를, 그를 이해하기 위해서는 Markov Chain에 대해서 알아야 한다. 그러니 논문에 들어가기 앞서 알아야 하는 내용부터 다루도록 한다.</p>
+
+<h2 id="1-markov-chain">1. Markov Chain</h2>
+
+<p>마르코프 연쇄(Markov Chain)는 마르코프 성질을 가진 이산 확률과정이다. 이 때 마르코프 성질은 마치 사슬처럼 ‘특정 상태의 확률은 오직 과거의 상태에 의존한다’는 것이다. 예를 들면 오늘 맑으면 간단하게 내일 날씨가 맑을지 흐릴지 확률적으로 표현할 수 있다(실제 날씨는 훨씬 복잡하게 확률을 구하겠지만 간단하게 보자면 그렇다는 거).</p>
+
+<p>예를 들어, 집과 학교가 있다. 집에서 학교로 갈 확률은 0.3, 학교에서 집으로 갈 확률은 0.8이고 장소는 집과 학교 둘 뿐이다. 매일 집과 학교 둘 중 한 군데로 갈 수 밖에 없다면, 확률로 나타내자면 다음과 같다. (추이행렬)</p>
+
+\[\begin{bmatrix} 0.7 &amp; 0.8 \\ 0.3 &amp; 0.2 \end{bmatrix}\begin{bmatrix} 집 \\ 학교 \end{bmatrix} = \begin{bmatrix} 0.7집 + 0.8학교 \\ 0.3집 + 0.2학교 \end{bmatrix}\]
+
+<p>여기서 0.7은 집에서 집으로 가는 확률, 0.8은 학교에서 집으로 가는 확률을 나타낸다. 만약 이 확률이 계속된다면 다음 날에도 이렇게 되겠지.</p>
+
+\[\begin{bmatrix} 0.7 &amp; 0.8 \\ 0.3 &amp; 0.2 \end{bmatrix}\begin{bmatrix}0.7집 + 0.8학교 \\ 0.3집 + 0.2학교 \end{bmatrix} = \begin{bmatrix}0.73집+0.72학교\\ 0.27집 + 0.28학교\end{bmatrix}\]
+
+<p>n일이 지났을 때는 결과적으로 아래와 같은 값이 나온다. 이 때 추이행렬의 무한제곱은 결국 하나의 극한 행렬에 수렴하게 되며 결국 집과 학교에 있는 사람들이 더 이상 이동하지 않고 안정적인 상태에 이르게 되었을 때의 인구 분포를 알 수 있다.</p>
+
+\[\begin{bmatrix} 0.7 &amp; 0.8 \\ 0.3 &amp; 0.2 \end{bmatrix}^n\begin{bmatrix} 집 \\ 학교 \end{bmatrix}\]
+
+<p><img src="/assets/img/textrank/cola_pepsi.jpeg" alt="MarkovChain example"></p>
+
+<p>마르코프 연쇄 예시 그래프 <d-footnote><a href="https://bskyvision.com/573" target="_blank" rel="noopener noreferrer">Markov Chain explained</a></d-footnote></p>
+
+<h2 id="2-pagerank">2. PageRank</h2>
+
+<p>PageRank는 대표적인 Graph ranking 알고리즘으로 초기 구글에서 검색 결과값으로 나오는 웹페이지들의 ranking을 구하는 데 사용됐다. Page Rank에 사용된 아이디어는 굉장히 직관적이다. 일종의 ‘투표’라고 생각하면 이해하기 쉽다. 다른 웹페이지들(backlinks)로부터 투표를 많이 받은 페이지는 점수가 크며, 점수가 클수록 중요한 페이지라고 볼 수 있다. 하지만 모든 페이지가 같은 점수를 가지고 있지는 않으므로 투표를 적게 받더라도 중요한 페이지로부터 투표를 받으면 점수가 높아질 수 있다.</p>
+
+<p>PageRank에서 각 페이지의 중요도 \(PR(u)\)는 다음과 같이 계산된다. 이 때 \(B_u\)는 페이지 \(u\)의 backlinks로 \(v\)에서 \(u\)로 가는 링크가 있다고 생각하면 된다. 각 페이지 \(v\)는 자신이 가진 link의 개수(\(N_v\))만큼 나눠서 각각의 page \(u\)에 전달한다.</p>
+
+\[PR(u) = c \times \sum_{v \in B_u} \frac{PR(v)}{N_v} + (1 - c) \times \frac{1}{N}\]
+
+<p>왜 자신이 가진 link의 개수만큼 나눌까? \(\sum_{v \in B_u} \frac{PR(v)}{N_v}\) 이 부분을 자세히 설명하자면 다음과 같다. 예를 들어 ranking 100의 페이지가 두 개의 페이지에 대해 backlinks로 존재한다면 두 개의 페이지에 각각 50점씩 들어간다. 이걸 개미의 이동 모델로 설명하기도 한다는데, N개의 마디가 존재하는 그래프에 각 마디마다 공평하게 \(\frac {1}{N}\)마리의 개미가 간다고 생각하면 쉽다. Backlinks가 많은 페이지는 많은 개미가 모인다. 이 과정은 한 번이 아니라 여러 번 수행한다.</p>
+
+<p><img src="/assets/img/textrank/pagerank1.png" alt="PR1"></p>
+
+<p>이런 과정을 확률 분야에서는 <strong>Markov Model</strong>이라고 부르며 개미가 이동하는 비율이 마르코프 체인의 추이행렬에 해당한다. 아래에 예시로 설명한다.</p>
+
+<p><img src="/assets/img/textrank/pagerank2.png" alt="PR2"></p>
+
+<p>위 그림의 이동을 행렬로 간단하게 0과 1로 표현하면 다음과 같다.</p>
+
+\[\begin{bmatrix} 0 &amp; 0 &amp; 1 \\  1 &amp; 0 &amp; 0\\1&amp;1&amp;0 \end{bmatrix}\]
+
+<p>이제 edge를 따라 개미가 몇 마리 가는지를 추이행렬로 바꾸면 다음과 같다.</p>
+
+\[\begin{bmatrix} 0 &amp; 0 &amp; 1 \\  \frac{1}{2} &amp; 0 &amp; 0\\\frac{1}{2}&amp;1&amp;0 \end{bmatrix} \begin{bmatrix} A\\B\\C\end{bmatrix} = \begin{bmatrix}C\\\frac{1}{2}A\\\frac{1}{2}A+B\end{bmatrix}\]
+
+<p>이 과정이 여러 번 반복된다고 하니, 마르코프 체인에서 봤듯이 해당 행렬을 무한히 제곱하면 A, B, C 페이지의 안정적인 점수가 나오며 그 점수가 PageRank인 것이다.</p>
+
+<p>그럼 \(c\)라는 상수는 왜 곱하느냐.. 우선 PageRank는 그래프가 cyclic 해야지만 제대로 계산이 된다. 하지만 어떤 페이지는 backlinks만 있고 다른 페이지로 연결되는 링크가 없을 수도 있다(dangling node). 이 경우에는 개미가 들어가기만 할 뿐 나가지 못하는데 그럼 해당 페이지의 점수를 보낼 곳이 없어진다. 이를 해결하기 위해서 각 페이지에 존재하는 개미의 \(c\)만큼 남겨둔다. 이 때 \(c\)는 보통 0.85로 정한다. \((1-c)\)만큼의 개미는 임의의 노드로 보내며, 다른 마디로 나눠서 가기 때문에 \(\frac{(1-c)}{N}\)로 계산된다. 즉 \(c\)는 링크에 의한 유입, \((1-c)\)는 임의 유입이라고 생각하면 된다. 이렇게 하면 모든 마디가 연결되어 cyclic network가 된다. <d-footnote><a href="https://lovit.github.io/machine%20learning/2018/04/16/pagerank_and_hits/" target="_blank" rel="noopener noreferrer">Lovit blog - PageRank</a></d-footnote></p>
+
+<h2 id="3-textrank">3. TextRank</h2>
+
+<p>이제 TextRank에 대해서 알아보자. 본 논문은 2가지 NLP 태스크를 수행한다; 키워드 추출 그리고 문장 추출. 이 때 태스크는 두 개의 연속된 노드 결과값의 차이가 threshold 미만으로 떨어질 때 값이 수렴하며 그 때 계산을 마친다는 점을 알아두자.</p>
+
+<p>TextRank는 텍스트 단위의 local context(어휘 단위; 정점)만 염두에 두는 게 아니라 전체 텍스트에서 반복적으로 정보를 뽑아왔다는 점(어휘 간의 관계; 간선)에서 의미가 있다. 그리고 한 텍스트 단위가 관련된 다른 텍스트 단위를 추천해준다는 점에서도 특징이 두드러진다. 키워드 추출에서는 동시에 나타나는 단어들이 서로를 중요하다고 “추천”해주며, 문장 추출에서는 비슷한 내용을 담은 문장들이 서로를 “추천”해준다.</p>
+
+<h3 id="keyword-extraction">Keyword Extraction</h3>
+
+<p>키워드 추출은 document를 가장 잘 설명하는 문자를 추출하는 일이다. 본 논문에서는 Abstract 데이터에서 키워드 추출을 진행하였다. 그래프는 undirected이며 정점과 간선은 다음과 같이 구성된다. 간선 같은 경우에는 <strong>co-occurrence relation</strong>을 사용하였다. 이는 단어 의미 판별(word sense disambiguation) 문제를 해소하기 좋기 때문이다. <d-footnote><a href="http://tinyurl.com/exjy883n" target="_blank" rel="noopener noreferrer">키워드 추출 알고리즘</a></d-footnote></p>
+
+<ul>
+  <li>Vertex: 특정 pos 태그를 가진 1 개 또는 여러 개의 어휘.</li>
+  <li>Edge: 두 어휘 사이의 관계를 정의할 수 있는 관계</li>
+</ul>
+
+<p>키워드 추출 과정은 다음과 같다.</p>
+
+<ol>
+  <li>텍스트를 tokenize한 후, pos 태그화한다. (single words만)</li>
+  <li>수렴할 때까지 window size N의 단어 간 co-occurrence를 구한다.</li>
+  <li>후처리를 위한 상위 T개의 정점을 역순으로 정렬해서 구한다. (T = 1/3 vertices)</li>
+  <li>만약 상위 T개의 단어 중 일부가 문장 내에서 연속해서 나타난다면 multi-word 키워드로 합쳐진다. (e.g. <em>Matlab</em> <em>code</em> for plotting ambiguity functions; <em>Matlab code</em>가 하나의 단어로 처리)</li>
+</ol>
+
+<p>키워드 추출을 진행한 결과를 분석하자면 다음과 같다.</p>
+
+<ul>
+  <li>window size가 작을수록 성능이 더 좋다. 이는 멀리 떨어져 있는 단어들은 텍스트 내에서 서로의 상호 관계가 약하기 때문이다.</li>
+  <li>pos 태그를 한 경우 결과가 좋게 나온다. 이는 언어적 정보가 키워드 추출을 돕는다는 이전 연구와 일맥상통한다.</li>
+  <li>Directed graph(텍스트의 자연스러운 흐름으로 방향을 결정)은 성능이 좋지 않았다. Co-occurring 단어들에 있어서 자연스러운 ‘방향’이 없다는 걸 의미한다.</li>
+</ul>
+
+<h3 id="sentence-extraction">Sentence Extraction</h3>
+
+<p>문장 추출은 extractive summary로 쓰인다. 이것 역시 비지도 학습이므로 문서 자동 요약에 쓰인다. 이 때 쓰이는 그래프에서 간선은 문장 간의 <strong>similarity relation</strong>을 사용했는데 이는 문장 간 내용이 얼마나 중복되는지로 구할 수 있다. 일종의 “추천”같은 게 A 문장은 독자에게 B 문장을 읽도록 “추천”해줄 수 있는데 그건 A와 B 문장 사이에 관계가 있기 때문이다. 이 때 문장 간 유사도는 다음과 같이 구한다. 두 문장에 공통으로 등장한 단어를 각 문장의 log 값의 합으로 나눈다. <d-footnote><a href="https://lovit.github.io/nlp/2019/04/30/textrank/" target="_blank" rel="noopener noreferrer">Lovit Blog - TextRank</a></d-footnote></p>
+
+\[sim(s_1, s_2) = \frac{\vert \{ w_k \vert w_k \in S_1 \&amp; w_k \in S_2 \} \vert}{log \vert S_1 \vert + log \vert S_2 \vert}\]
+
+<p>보통 문장 길이를 정규화해 유사도를 구하기 위해서 cosine similarity를 사용하지만 이는 짧은 문장에 민감하게 반응할 수 있다. 그래서 이 논문에서는 문장 간 유사도 구하는 공식을 새로 정의하였다. 길이가 긴 문장을 선호하는 걸 방지하기 위해 문장 길이의 log값을 합친 것을 분모로 사용하였지만 계산해보면 문장의 길이가 길수록 높은 유사도를 가진다. log값을 부여하면서 문장이 길어질수록 분모의 값은 작아지는데 겹치는 단어 수가 많으면 분자는 여전히 크기 때문에 유사도가 커진다. 즉, 의도와 달리 TextRank 는 길이가 긴 문장을 선호한다.</p>
+
+<p>아무튼, 문장 추출에서는 한 문장이 다른 문장을 얼마나 추천해주는지가 중요하기 때문에 weighted graph를 사용한다. Weighted graph는 기존의 공식에서 가중치 값만 추가해주며 수식은 아래와 같다.</p>
+
+\[WS(V_i) = (1-d) + d \times \sum_{j \in In(V_i)} \frac{w_{ji}}{\sum_{V_k \in Out(V_j)} w_{jk}}WS(V_j)\]
+
+<p>TextRank를 사용해서 Document Understanding Evaluations 2002 (DUC, 2002)에 사용된 신문 기사 데이터를 요약한다. 모델 성능 평가는 ROUGE를 사용하며, 직접 만든 요약본 2개로 평가한다. 결과는 sota가 아니지만 다른 시스템들은 학습된 반면, TextRank는 fully unsupervised 라는 점에서 높이 산다.</p>
+
+      </d-article>
+
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
+
+    </div>
+
+    <!-- Footer -->    
+    <footer class="fixed-bottom">
+      <div class="container mt-0">
+        © Copyright 2024 Yuheun  Kim. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme.
+
+      </div>
+    </footer>
+
+  </body>
+
+  <d-bibliography src="/assets/bibliography/textrank-review.bib">
+  </d-bibliography>
+
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Bootsrap & MDB scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha256-l/1pMF/+J4TThfgARS6KwWrk/egwuVvhRzfLAMQ6Ds4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha256-SyTu6CwrfOhaznYZPoolVw2rxoY7lKYKQvqbtqN93HI=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.20.0/js/mdb.min.js" integrity="sha256-NdbiivsvWt7VYCt6hYNT3h/th9vSTL4EDWeGs5SN3DA=" crossorigin="anonymous"></script>
+
+  <script src="/assets/js/distillpub/overrides.js"></script>
+
+</html>
