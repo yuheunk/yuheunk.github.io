@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-02-28 7:00:00-0400
+date: 2024-08-26 7:00:00-0400
 inline: true
 ---
 
-Finished Masters(M.S.) at Yonsei University
+Received Research Excellence Doctoral Funding (REDF) Fellowship from Syracuse University Graduate school.

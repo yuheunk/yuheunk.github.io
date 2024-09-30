@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-08-29 07:59:00-0400
+date: 2024-07-19 07:59:00-0400
 inline: true
 ---
 
-Incoming PhD Student @Syracuse University
+I made an oral presentation at <a href="https://ic2s2-2024.org">IC2S2</a>!

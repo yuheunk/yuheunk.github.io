@@ -226,6 +226,9 @@ scholar:
   details_layout: bibtex.html
   details_link: Details
 
+  bibliography_template: bib
+  bibtex_skip_fields: [bibtex_show, html, pdf, supp, selected, blog, code, poster, slides, website, abbr, abstract, month_numeric]
+
   query: "@*"
 
 

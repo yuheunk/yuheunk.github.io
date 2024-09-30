@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Doctoral student @ <a href="https://ischool.syr.edu">Syracuse University Information Science & Technology</a>
+subtitle: 
 
 profile:
   align: right
@@ -20,10 +20,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-👋 Hello, my name is pronounced as `/Yeo-un/`. I also go by `Rachel` so feel free to call me either. 
+Hello 👋, my name is pronounced as `/Yeo-un/`. I also go by `Rachel` so feel free to call me either. I am a 3rd year PhD student in <a href="https://ischool.syr.edu">Syracuse University iSchool</a>. My advisor is <a href="https://c4-lab.github.io/josh-introne/">Joshua Introne</a>.
 
-My research interest is mainly in <b>Natural Language Processing(NLP)</b>, specifically <b>information extraction</b> using NLP tools and deep learning.
+My research interest is mainly in <b>Natural Language Processing(NLP)</b>, specifically on computationally approaching social science questions in stereotypes and bias using NLP tools and deep learning.
 
-I got a M.S. in [Digital Analytics](https://digitalanalytics.yonsei.ac.kr/digital_analytics/index.do) from Yonsei University and worked as a research assistant in [Deep Text Lab](https://deeptext.yonsei.ac.kr) on various NLP tasks such as <i>Biomedical Information Extraction, Social Text Mining</i> and <i>Neural Search</i>.
-
-Check out my [Google Scholar](https://scholar.google.com/citations?user=JYrO_FYAAAAJ&hl=ko&oi=ao) or [CV](https://yuheunk.github.io/assets/pdf/CV_yk_2401.pdf) for more information. <br>
+Check out my [Google Scholar](https://scholar.google.com/citations?user=JYrO_FYAAAAJ&hl=ko&oi=ao) or [CV](https://yuheunk.github.io/assets/pdf/CV_YK_Sep2024.pdf) for more information.
