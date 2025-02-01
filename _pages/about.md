@@ -24,4 +24,4 @@ Hello 👋, my name is pronounced as `/Yeo-un/`. I also go by `Rachel` so feel f
 
 My research interest is mainly in <b>Natural Language Processing(NLP)</b>, specifically on computationally approaching social science questions in stereotypes and bias using NLP tools and deep learning.
 
-Check out my [Google Scholar](https://scholar.google.com/citations?user=JYrO_FYAAAAJ&hl=ko&oi=ao) or [CV](https://yuheunk.github.io/assets/pdf/CV_YK_Sep2024.pdf) for more information.
+Check out my [Google Scholar](https://scholar.google.com/citations?user=xjX_ZhEAAAAJ) or [CV](https://yuheunk.github.io/assets/pdf/CV_YK_Jan2025.pdf) for more information.
