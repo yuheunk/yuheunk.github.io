@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2024-07-19 07:59:00-0400
+date: May-20
 inline: true
 ---
 
-I made an oral presentation at <a href="https://ic2s2-2024.org">IC2S2</a>!
+✨ "LLM-Supported Content Analysis of Motivated Reasoning on Climate Change" got accepted to <b>ASIS&T 2025</b> for a virtual presentation. 🎉

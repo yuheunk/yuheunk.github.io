@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2024-08-26 7:00:00-0400
+date: 2025-07-15
 inline: true
 ---
 
-Received Research Excellence Doctoral Funding (REDF) Fellowship from Syracuse University Graduate school.
+✨ "Belief Alignment vs Opinion Leadership: Understanding Cross-linguistic Digital Activism in K-pop and BLM Communities" [<a href="https://arxiv.org/abs/2507.16046">preprint</a>] got accepted to <b>ICWSM 2026</b>! 🎉
