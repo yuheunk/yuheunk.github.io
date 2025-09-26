@@ -9,9 +9,11 @@ profile:
   image: prof_pic.png
   address: >
     <p align="center">📍 Syracuse NY, USA</p>
+  social: >
     <p align="center">
       <a href="mailto:ykim72@syr.edu"><i class="fas fa-envelope"></i></a> 
       <a href="https://github.com/yuheunk" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://x.com/yuh_eun" title="Twitter"><i class="fab fa-twitter"></i></a>
       <a href="https://www.linkedin.com/in/yuheunk" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
     </p>
 

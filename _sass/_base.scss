@@ -19,6 +19,10 @@ table {
     td {
       font-size: 1rem;
     }
+    th {
+      width: 85px;
+      font-weight: bolder;
+    }
 }
 
 a, table.table a {
@@ -101,6 +105,23 @@ blockquote {
     margin-top: 5px;
     font-family: monospace;
     font-size: 0.8rem;
+    p {
+      display: inline-block;
+      margin: 0;
+    }
+    a {
+      color: inherit;
+      &:hover {
+        color: var(--global-theme-color);
+        text-decoration: none;
+      }
+    }
+  }
+  .social {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: monospace;
+    font-size: 1rem;
     p {
       display: inline-block;
       margin: 0;
