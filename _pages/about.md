@@ -22,8 +22,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-Hello 👋, my name is pronounced as `/Yeo-un/`. I also go by `Rachel` so feel free to call me either. I am a PhD student in <a href="https://ischool.syr.edu">Syracuse University iSchool</a>. My advisor is <a href="https://c4-lab.github.io/josh-introne/">Joshua Introne</a>.
+Hello 👋, my name is pronounced as `/Yeo-un/`. I also go by `Rachel` so feel free to call me either. I am a PhD candidate in <a href="https://ischool.syr.edu">Syracuse University iSchool</a>. My advisor is <a href="https://c4-lab.github.io/josh-introne/">Joshua Introne</a>.
 
-I’m interested in how large language models (LLMs) capture cultural perspectives on gender bias across different languages and in exploring the representational alignment of their internal architectures.
+My research sits at the intersection of Natural Language Processing (NLP), computational social science, and responsible AI. Specifically, my focus is on whether multilingual large language models are <b>truly multilingual</b>, not just in performance, but in how faithfully they represent the <i>cultural knowledge</i> embedded in the languages they process. 
 
-Check out my [Google Scholar](https://scholar.google.com/citations?user=xjX_ZhEAAAAJ) or [CV](https://yuheunk.github.io/assets/pdf/CV_YK_Aug2025.pdf) for more information.
+Check out my [Google Scholar](https://scholar.google.com/citations?user=xjX_ZhEAAAAJ) or [CV](https://yuheunk.github.io/assets/pdf/CV_march26.pdf) for more information.
